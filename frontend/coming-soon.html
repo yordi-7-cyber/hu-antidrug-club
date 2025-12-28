@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haramaya University Anti-Drug Club</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1e5799 0%, #207cca 51%, #2989d8 100%);
+            color: white;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+        .logo {
+            width: 150px;
+            height: 150px;
+            background: white;
+            border-radius: 50%;
+            margin: 0 auto 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 50px;
+            color: #1e5799;
+            font-weight: bold;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #4CAF50;
+        }
+        .emergency {
+            background: #ff4444;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 30px 0;
+            border: 3px solid white;
+        }
+        .contact {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 2px solid rgba(255,255,255,0.2);
+        }
+        @media (max-width: 768px) {
+            .container { padding: 20px; }
+            h1 { font-size: 1.8rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">HU</div>
+        <h1>Haramaya University Anti-Drug Club</h1>
+        <p style="font-size: 1.2rem; margin-bottom: 20px;">
+            Official website under development. Launching soon to create a drug-free campus.
+        </p>
+        
+        <div class="emergency">
+            <h2>🆘 IMMEDIATE HELP</h2>
+            <p>If you or someone needs help urgently:</p>
+            <div style="margin-top: 15px;">
+                <p><strong>University Clinic:</strong> +251-XXX-XXXXXX</p>
+                <p><strong>Club President (Kamil):</strong> +251-9XX-XXXXXX</p>
+                <p><strong>Dean of Students:</strong> +251-XXX-XXXXXX</p>
+            </div>
+        </div>
+        
+        <div class="contact">
+            <h3>📞 Contact Us</h3>
+            <p>Email: antidrugclub@haramaya.edu.et</p>
+            <p>Location: Student Union Building, Haramaya University</p>
+            <p style="margin-top: 20px; font-style: italic;">
+                "Building a drug-free future together"
+            </p>
+        </div>
+    </div>
+    
+    <script>
+        // Simple visitor counter
+        let visits = localStorage.getItem('visits') || 0;
+        visits++;
+        localStorage.setItem('visits', visits);
+        console.log(`Welcome! You are visitor #${visits}`);
+    </script>
+</body>
+</html>
